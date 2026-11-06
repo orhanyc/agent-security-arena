@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agent-security-arena
+    runtime: docker
+    healthCheckPath: /health
+    envVars:
+      - key: ARENA_PORT
+        value: 8080
+      - key: ARENA_MAX_EVENTS
+        value: 5000
